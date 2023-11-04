@@ -3,8 +3,8 @@ from player_reader import PlayerReader
 
 
 class StatisticsService:
-    def __init__(self):
-        reader = PlayerReader()
+    def __init__(self, reader_inp):
+        reader = reader_inp
 
         self._players = reader.get_players()
 
